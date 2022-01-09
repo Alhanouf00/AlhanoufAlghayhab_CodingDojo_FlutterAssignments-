@@ -1,0 +1,57 @@
+import 'dart:math';
+
+void main() { 
+
+  print(createDeveloper("Alhanouf",2.55,true));
+  print(clacPythagorean(3,4));
+  
+  print( calcDistance(5,6 ,7,8));
+  
+
+}
+
+
+String createDeveloper(String name,double  height ,bool isNewDeveloper ) 
+{
+ 
+  return "This new developer $name is $height feet tall and is or is not a new developer";
+  
+}
+
+double clacPythagorean(double A ,double B) 
+{
+  double C = 0.0;
+  if(A !=null && B!=null )
+  {
+    double a = pow(A,2).toDouble();
+    double b = pow(B,2).toDouble();
+      
+      double c = a+b;
+    
+     C = sqrt(c);
+    
+  }
+  return C;
+  
+}
+
+double calcDistance(double x1,double x2 ,double y1,double y2)
+{
+  double x3 = x2 - x1 ;
+  
+  double y3 = y2 - y1 ;
+  
+  x3 = pow(x3,2).toDouble();
+  y3 = pow(y3,2).toDouble();
+  
+  double d = x3 + y3 ; 
+  
+  
+  return d ;
+  
+  
+  
+  
+}
+
+
